@@ -1,16 +1,15 @@
 {
   "name": "react-dnd-es5-examples",
-  "version": "1.0.0",
   "description": "React-DnD examples in ES5",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vkbansal/react-dnd-es5-examples.git"
   },
-  "author": "",
+  "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vkbansal/react-dnd-es5-examples/issues"
@@ -22,6 +21,8 @@
     "react-router": "^0.13.3"
   },
   "devDependencies": {
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
     "node-libs-browser": "^0.5.2",
     "webpack": "^1.10.0"
   }

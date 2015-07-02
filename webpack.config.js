@@ -7,6 +7,15 @@ module.exports = {
         path: path.join(__dirname, "build"),
         filename: "bundle.js",
     },
+    module: {
+       loaders: [
+           {
+               test: /\.js$/,
+               loaders: ["babel"],
+               exclude: /node_modules/
+           }
+       ]
+   },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.DefinePlugin({
@@ -19,6 +28,6 @@ module.exports = {
                 warnings: false
             },
             mangle: false
-        }),
+        })
     ]
 };
