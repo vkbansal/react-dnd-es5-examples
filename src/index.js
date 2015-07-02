@@ -4,7 +4,8 @@ var React = require("react"),
     RouteHandler = Router.RouteHandler,
     Link = Router.Link,
     Redirect = Router.Redirect,
-    DustbinSingleTarget = require("./01 Dustbin/Single Target");
+    DustbinSingleTarget = require("./01 Dustbin/Single Target"),
+    SortableSimple = require("./04 Sortable/Simple");
 
 var App = React.createClass({
     render: function() {
@@ -14,7 +15,7 @@ var App = React.createClass({
                 <div className="col-xs-3">
                 <ul className="nav nav-pills nav-stacked">
                     <li><Link to="dustbin-single-target">Dustbin Single Target</Link></li>
-                    <li><Link to="dustbin-single-target">Dustbin Single Target</Link></li>
+                    <li><Link to="sortable-simple">Sortable Simple</Link></li>
                 </ul>
                 </div>
                 <div className="col-xs-9" id="main">
@@ -28,6 +29,7 @@ var App = React.createClass({
 var routes = (
     <Route handler={App}>
         <Route name="dustbin-single-target"  path="dustbin-single-target" handler={DustbinSingleTarget}/>
+        <Route name="sortable-simple"  path="sortable-simple" handler={SortableSimple}/>
         <Redirect from="/" to="dustbin-single-target"/>
     </Route>
 )
