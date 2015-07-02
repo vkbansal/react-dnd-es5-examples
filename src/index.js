@@ -10,9 +10,10 @@ var App = React.createClass({
     render: function() {
         return (
             <div className="container-fluid">
-                <h3>ReactDnD ES5 examples <small>For those who cannot use E56/7 despite using jsx.</small></h3>
+                <h3>ReactDnD ES5 examples <small>For those who cannot use ES6/7 despite using jsx.</small></h3>
                 <div className="col-xs-3">
                 <ul className="nav nav-pills nav-stacked">
+                    <li><Link to="dustbin-single-target">Dustbin Single Target</Link></li>
                     <li><Link to="dustbin-single-target">Dustbin Single Target</Link></li>
                 </ul>
                 </div>
