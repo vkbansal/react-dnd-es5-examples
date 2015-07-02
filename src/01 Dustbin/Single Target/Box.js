@@ -52,4 +52,4 @@ module.exports = ReactDnD.DragSource(ItemTypes.BOX, boxSource, function (connect
         connectDragSource: connect.dragSource(),
         isDragging: monitor.isDragging()
     };
-});
+})(Box);

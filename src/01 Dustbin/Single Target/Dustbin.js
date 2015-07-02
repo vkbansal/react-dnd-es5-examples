@@ -30,20 +30,21 @@ var Dustbin = React.createClass({
     render: function() {
         var isActive = this.props.canDrop && this.props.isOver;
 
-        var backgroundColor = '#222';
+        style.backgroundColor = '#222';
+
         if (isActive) {
-            backgroundColor = 'darkgreen';
-        } else if (canDrop) {
-            backgroundColor = 'darkkhaki';
+            style.backgroundColor = 'darkgreen';
+        } else if (this.props.canDrop) {
+            style.backgroundColor = 'darkkhaki';
         }
 
         return this.props.connectDropTarget(
-            <div style={{ ...style, backgroundColor }}>
+            <div style={style}>
             {isActive ? 'Release to drop' : 'Drag a box here'}
             </div>
         );
     }
-}
+});
 
 module.exports = ReactDnD.DropTarget(ItemTypes.BOX, boxTarget, function(connect, monitor) {
     return {

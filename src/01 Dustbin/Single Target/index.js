@@ -6,7 +6,7 @@ var DustbinSingleTarget = React.createClass({
         return (
             <div>
                 <p>
-                    <b><a href='https://github.com/gaearon/react-dnd/tree/master/examples/01%20Dustbin/Single%20Target'>Browse the Source</a></b>
+                    <b><a href='https://github.com/vkbansal/react-dnd-es5-examples/tree/master/examples/01%20Dustbin/Single%20Target'>Browse the Source</a></b>
                 </p>
                 <p>
                     This is the simplest example there is.
@@ -22,4 +22,4 @@ var DustbinSingleTarget = React.createClass({
     }
 });
 
-React.render(<DustbinSingleTarget/>, document.getElementById('main'));
+module.exports = DustbinSingleTarget;
