@@ -6,6 +6,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "build"),
         filename: "bundle.js",
+        sourceMapFileName: "bundle.js.map"
     },
     module: {
        loaders: [
@@ -15,7 +16,8 @@ module.exports = {
                exclude: /node_modules/
            }
        ]
-   },
+    },
+    devtool: "source-map",
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.DefinePlugin({
